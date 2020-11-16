@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Kittirat Project',
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: MyHomePage(title: 'Kittirat Project'),
     );
   }
 }
@@ -96,14 +96,14 @@ class _MyHomePageState extends State<MyHomePage> {
                 Container(
                   padding: const EdgeInsets.only(bottom: 8),
                   child: Text(
-                    'Oeschinen Lake Campground',
+                    'Kittirat Aomchumpool',
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                     ),
                   ),
                 ),
                 Text(
-                  'Kandersteg, Switzerland',
+                  'Ubon, Thailand',
                   style: TextStyle(
                     color: Colors.grey[500],
                   ),
@@ -116,22 +116,22 @@ class _MyHomePageState extends State<MyHomePage> {
             Icons.star,
             color: Colors.red[500],
           ),
-          Text('41'),
+          Text('99'),
         ],
       ),
     );
     Widget textSection = Container(
-      padding: const EdgeInsets.all(32),
-      child: Text(
-        'Lake Oeschinen lies at the foot of the Blüemlisalp in the Bernese '
-        'Alps. Situated 1,578 meters above sea level, it is one of the '
-        'larger Alpine Lakes. A gondola ride from Kandersteg, followed by a '
-        'half-hour walk through pastures and pine forest, leads you to the '
-        'lake, which warms to 20 degrees Celsius in the summer. Activities '
-        'enjoyed here include rowing, and riding the summer toboggan run.',
-        softWrap: true,
-      ),
-    );
+        padding: const EdgeInsets.all(32),
+        child: Column(
+          children: [
+            Text('ชื่อ : นายกิตติรัตน์ ออมชมภู ชั้นปีที่ 3 '
+                ),
+            Text('รหัสนักศึกษา : 61114440052'),
+            Text('สาขา : วิทยาการคอมพิวเตอร์ '),
+            Text('คณะ : วิทยาศาสตร์  '),
+            Text('มหาวิทยาลัยอุบลราชธานี'),
+          ],
+        ));
     return Scaffold(
       appBar: AppBar(
         // Here we take the value from the MyHomePage object that was created by
@@ -139,7 +139,6 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: ListView(
-        
         children: <Widget>[
           Image.asset(
             'images/lake.jpg',
